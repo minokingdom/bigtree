@@ -46,7 +46,10 @@ export default function UrgencySection() {
                             viewport={{ margin: "-50px" }}
                             transition={{ duration: 0.5, delay: index * 0.2 }}
                             whileHover={{ y: -5 }}
-                            className="bg-navy-800/50 backdrop-blur border border-white/5 p-8 rounded-2xl text-center group hover:border-red-500/50 transition-colors relative overflow-hidden"
+                            className={`backdrop-blur p-8 rounded-2xl text-center group transition-colors relative overflow-hidden ${index === 2
+                                    ? "bg-red-950/30 border border-red-500/20 hover:border-red-500/50"
+                                    : "bg-navy-800/50 border border-white/5 hover:border-red-500/50"
+                                }`}
                         >
                             <div className="absolute inset-0 bg-gradient-to-b from-red-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                             <h3 className="text-slate-400 font-medium mb-4">{fine.count}</h3>
