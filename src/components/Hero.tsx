@@ -23,11 +23,11 @@ export default function Hero() {
                 <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-blue-900/20 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
                 <div className="absolute bottom-[-10%] left-[-5%] w-[600px] h-[600px] bg-indigo-900/20 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
 
-                <div style={{ width: '100%', height: '100%', position: 'absolute', inset: 0, zIndex: 0 }}>
+                <div style={{ width: '100%', height: '100%', position: 'absolute', inset: 0, zIndex: 0, opacity: 0.6 }}>
                     <PixelBlast
                         variant="square"
                         pixelSize={4}
-                        color="#B19EEF"
+                        color="#E11D48"
                         patternScale={2}
                         patternDensity={1}
                         pixelSizeJitter={0}
